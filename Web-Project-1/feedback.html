@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Learning HTML - Feedback</title>
+  </head>
+
+  <body style="background-color: black;">
+
+    <header style="color: whitesmoke;">
+      <a href="index.html">Home</a>
+      <a href="learning.html">Learn HTML</a>
+
+      <!--introduction-->
+      <h1>Feedback Form</h1>
+      <p>If you have any feedback of this website, you can submit it here.</p> </br> </br>
+    </header>
+
+    <article style="color: whitesmoke;">
+      <form method="get" name="feedback-form">
+
+        <!--username input-->
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username (optional)" /> </br> </br> <br>
+
+        <!--email address input-->
+        <label for="email-address">Email (this is just so i can contact you if i have any questions about your feedback):</label>
+        <input type="email" id="email-address" placeholder="Email (optional)" name="email-address"/> </br> </br> </br>
+
+        <!--phone number input-->
+        <label for="phone-number">Phone number (this is also just for contact and is optional):</label>
+        <input type="tel" id="phone-number" name="phone-number"/> </br> </br> </br>
+
+        <!--website rating input (range)-->
+        <label for="website-rating">Use this to show how much you liked this website (higher bar means you liked it more)</label> </br>
+        <input type="range" id="website-rating" name="website-rating" min="1" max="10" required/> </br> </br>
+
+        <!--feedback text area-->
+        <label for="get-feedback">Feedback:</label> </br>
+        <textarea type="text" name="feedback" id="get-feedback" placeholder="Describe what suggestions you have..." rows="3" cols="50" required></textarea> </br> </br>
+
+        <!--submit button-->
+        <input type="submit" value="Submit"/>
+      </form>
+    </article>
+  </body>
+</html>
